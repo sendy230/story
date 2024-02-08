@@ -113,15 +113,13 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode(enums.ParseMode.HTML)
-        self.LOGGER(__name__).info(
-            f"
+        self.LOGGER(__name__).info(f"
 ███████╗██╗░░░██╗██████╗░
 ██╔════╝╚██╗░██╔╝██╔══██╗
 █████╗░░░╚████╔╝░██████╦╝
 ██╔══╝░░░░╚██╔╝░░██╔══██╗
 ██║░░░░░░░░██║░░░██████╦╝
-╚═╝░░░░░░░░╚═╝░░░╚═════╝░ "
-        )
+╚═╝░░░░░░░░╚═╝░░░╚═════╝░ ")
 
     async def stop(self, *args):
         await super().stop()
